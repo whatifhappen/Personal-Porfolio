@@ -10,4 +10,4 @@ Teng's Porfolio
 
 script.js简单的做了一个页面平滑滚动以及回到顶部的jQuery特效。
 
-![alt text](/img/Teng's Porfolio sreenshot.png "Teng's Porfolio sreenshot")
+![Teng's Porfolio sreenshot](../img/Teng's Porfolio sreenshot.png "Teng's Porfolio sreenshot")
