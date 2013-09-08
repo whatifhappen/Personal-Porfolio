@@ -1,0 +1,58 @@
+//--------------------------
+//--@variables
+//--------------------------
+
+@dark-blue: #3e526c; //text color and stripe
+@light-grey: #f4f2f4; //for the header & content bg
+@dark: #1a2128; //for the footer
+@light-blue: #afd0e1;
+@box-bg: #fcfafa;
+@icon-bg: #949dac;
+@grey: #e2e1e0;
+@tab: #577ea4; //for the box;
+@blue: #47a3da;
+
+//--------------------------
+//--@Mixins
+//--------------------------
+
+.transition (@prop: all, @duration: .5s) {
+	-webkit-transition: @arguments;
+	-moz-transition: @arguments;
+	-o-transition: @arguments;
+	-ms-transition: @arguments;
+	transition: @arguments;
+}
+
+.rounded (@radius: 10px) {
+	-webkit-border-radius: @radius;
+	-moz-border-radius: @radius;
+	-o-border-radius: @radius;
+	border-radius: @radius;
+}
+
+.box-shadow (@x:0, @y:0, @blur: 5px) {
+	-webkit-box-shadow: @arguments rgba(0,0,0,.3);
+	box-shadow: @arguments rgba(0,0,0,.3);
+}
+
+.inner-shadow (@x: 0, @y: 0, @blur: 7px) {
+	-webkit-box-shadow: inset @arguments rgba(0,0,0, .3);
+	box-shadow: inset @arguments rgba(0,0,0, .3);
+}
+
+.translateY(@prop: 10px) {
+	-webkit-transform: translateY(@prop);
+	-moz-transform: translateY(@prop);
+	-o-transform: translateY(@prop);
+	-ms-transform: translateY(@prop);
+	transform: translateY(@prop); 
+}
+
+.translateX(@prop: 10px) {
+	-webkit-transform: translateX(@prop);
+	-moz-transform: translateX(@prop);
+	-o-transform: translateX(@prop);
+	-ms-transform: translateX(@prop);
+	transform: translateX(@prop);
+}
